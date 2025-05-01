@@ -34,6 +34,7 @@ with st.expander('Analizar Polaridad y Subjetividad en un texto'):
         x=round(blob.sentiment.polarity,2)
         if x >= 0.5:
             st.write( 'Es un sentimiento Positivo 😊')
+            st.image("https://raw.githubusercontent.com/tu_usuario/tu_repositorio/main/positivo.png", width=250)
         elif x <= -0.5:
             st.write( 'Es un sentimiento Negativo 😔')
         else:
